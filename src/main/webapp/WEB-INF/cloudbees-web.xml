@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<cloudbees-web-app xmlns="http://www.cloudbees.com/xml/webapp/1">     
+    <appid>helloonline</appid>
+    <context-param>
+        <param-name>application.environment</param-name>
+        <param-value>prod</param-value>
+    </context-param>
+    <resource name="jdbc/dailybalan-800" auth="Container" 
+    	type="javax.sql.DataSource" maxActive="100" maxIdle="30" 
+    	maxWait="10000"
+    	driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://ec2-50-19-213-178.compute-1.amazonaws.com">
+	 <param name="username" value="dailybalan-800" />
+	 <param name="password" value="a1eae99c8c474eeab4d53bc02ceb6820" />
+	 <param name="url" value="jdbc:mysql://ec2-50-19-213-178.compute-1.amazonaws.com" />
+	 <param name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	</resource>
+</cloudbees-web-app>

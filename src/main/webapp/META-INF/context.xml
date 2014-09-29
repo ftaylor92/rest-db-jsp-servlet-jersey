@@ -1,0 +1,23 @@
+<Context>
+    <Resource
+            name="jdbc/testCBDB"
+            auth="Container"
+            type="javax.sql.DataSource"
+
+            url="jdbc:mysql://ec2-50-19-213-178.compute-1.amazonaws.com/fmt-test"
+            username="ftaylor92"
+            password="ftaylor92"
+
+            driverClassName="com.mysql.jdbc.Driver"
+
+            maxActive="20"
+            maxIdle="1"
+            maxWait="10000"
+            removeAbandoned="true"
+            removeAbandonedTimeout="60"
+            logAbandoned="true"
+
+            validationQuery="SELECT 1"
+            testOnBorrow="true"
+            />
+</Context>
