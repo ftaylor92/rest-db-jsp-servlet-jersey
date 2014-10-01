@@ -26,7 +26,7 @@ public class Sundial {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<String> dbQuery(@Context HttpServletRequest servletRequest) {
-		List<String> lines= new ArrayList();
+		List<String> lines= new ArrayList<>();
 		
 		try {
 			String path = servletRequest.getServletContext().getRealPath("/");
